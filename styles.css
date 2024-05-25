@@ -109,3 +109,17 @@ border-color: aqua;
     align-items: center;
     justify-content: center;
 }
+.fa-linkedin{
+font-size: 50px;
+margin-right: 20px;
+color:skyblue;
+}
+.fa-facebook{
+ font-size: 50px;
+ padding-right: 20px;
+ color:rgb(87, 87, 241);
+}
+.fa-github{
+ font-size: 50px;
+ color:black;
+}
