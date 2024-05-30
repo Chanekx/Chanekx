@@ -8,24 +8,25 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #305c80;
-    color: #dddada rgb(15, 30, 59);
+    color: #ddd;
     line-height: 1.6;
 }
 
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #162A2E;
-    padding: 20px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensures the navbar stays on top of other elements */
-    transition: top 0.3s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #162A2E;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000; /* Ensures the navbar stays on top of other elements */
+        transition: top 0.3s;
 }
 .navbar.hidden {
-    top: -100px;
+    top: -100px; /* Adjust this value based on the height of your navbar */
 }
 
 .logo a {
@@ -33,8 +34,9 @@ body {
     font-size: 1.5rem;
     text-decoration: none;
 }
-.logo a:hover{
- color: red;
+
+.logo a:hover {
+    color: red;
 }
 
 .nav-links ul {
@@ -50,42 +52,58 @@ body {
     color: aquamarine;
     text-decoration: none;
 }
-.nav-links ul li a:hover{
- color:red
+
+.nav-links ul li a:hover {
+    color: red;
 }
 
 .section {
     padding: 50px 20px;
 }
 
-.cover_img {
+.cover-img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.cover-img:hover {
+    /* Add your hover styles here */
+    transform: scale(1.05); /* Example of hover effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
 .blue {
     margin-top: 20px;
     text-align: center;
 }
-.blue a{
-  color:aquamarine;
-  text-decoration: none;
-  font-size: 2rem;
-}
-.blue a:hover{
-color:red;
-}
+
 .blue h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    animation: moveText 3s infinite;
 }
-.blue h2{
-border-color: aqua;
+
+.blue a {
+    color: aquamarine;
+    text-decoration: none;
+    font-size: 2rem;
+
 }
-.blue h2:hover{
- color: red;
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.blue a:hover {
+    color: red;
 }
 
 .para {
@@ -109,25 +127,29 @@ border-color: aqua;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.cssimg{
+.css-img {
     height: 85px;
 }
-.home-section{
+
+.home-section {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.fa-linkedin{
-font-size: 50px;
-margin-right: 20px;
-color:skyblue;
+
+.fa-linkedin {
+    font-size: 50px;
+    margin-right: 20px;
+    color: skyblue;
 }
-.fa-facebook{
- font-size: 50px;
- padding-right: 20px;
- color:rgb(87, 87, 241);
+
+.fa-facebook {
+    font-size: 50px;
+    padding-right: 20px;
+    color: rgb(87, 87, 241);
 }
-.fa-github{
- font-size: 50px;
- color:black;
+
+.fa-github {
+    font-size: 50px;
+    color: black;
 }
