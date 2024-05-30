@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chanekx's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="logo">
-            <a id='btn' href="#" onClick="reloadFile()">Chanekx</a>
+        <div class="logo"> 
+            <a id="btn" href="#" onclick="reloadFile()">Chanekx</a>
         </div>
         <div class="nav-links">
             <ul>
@@ -22,24 +23,24 @@
         </div>
     </nav>
 
-    <div id="home" class="section home-section">
+    <section id="home" class="home-section">
         <div class="cover">
-            <img src="nobg2.png" alt="Cover Image" class="cover_img">
+            <img src="nobg2.png" alt="Cover Image" class="cover-img">
         </div>
         <div class="blue">
-            <h1>Hey there, I'm Christian!</h1>
-            <a href="RESUME.pdf" download >DOWNLOAD CV</a>
+            <h1 class="moving-text">Hey there, I'm Christian!</h1>
+            <a href="RESUME.pdf" download>DOWNLOAD CV</a>
         </div>
-    </div>
+    </section>
 
-    <div id="about" class="section">
+    <section id="about" class="section">
         <div class="content">
             <h1>About Me</h1>
             <p class="para">I'm Christian Lloyd Circulado, a computer science student passionate about frontend development, meticulously crafting user-friendly websites. With an unwavering commitment to detail and a thirst for continuous learning, I blend code and creativity to build seamless and visually appealing digital experiences.</p>
         </div>
-    </div>
+    </section>
 
-    <div id="language" class="section">
+    <section id="language" class="section">
         <div class="content">
             <h1>Languages</h1>
             <div class="backend">
@@ -53,20 +54,28 @@
                 <h2>Frontend Languages</h2>
                 <div class="frontend-img">
                     <img src="html.png" alt="HTML">
-                    <img src="css.png"  alt="CSS" class ="cssimg">
+                    <img src="css.png" alt="CSS" class="css-img">
                 </div>
             </div>
         </div>
-    </div>
-    <div id="contact" class ="section">
-        <div class ="content">
-            <h1>Social Media</h1>
-            <a href="https://www.linkedin.com/in/christian-lloyd-circulado-b94030205/" target="_blank">Linkedin</h1>
-            <br><a href="https://www.facebook.com/Chanekx" target="_blank">Facebook</a>
-            <br><a href="https://github.com/Chanekx" target="_blank">Github</a>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content">
+            <h1>Social Media Accounts</h1>
+            <a href="https://www.linkedin.com/in/christian-lloyd-circulado-b94030205/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/Chanekx" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://github.com/Chanekx" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
         </div>
-    </div>
+    </section>
 
     <script src="index.js"></script>
 </body>
 </html>
+
