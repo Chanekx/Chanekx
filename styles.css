@@ -18,6 +18,14 @@ body {
     align-items: center;
     background-color: #162A2E;
     padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+    transition: top 0.3s;
+}
+.navbar.hidden {
+    top: -100px;
 }
 
 .logo a {
