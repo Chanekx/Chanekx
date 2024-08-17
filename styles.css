@@ -13,18 +13,44 @@ body {
 }
 
 
+/* Base Styles */
 .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #162A2E;
-        padding: 20px;
-        position: sticky;
-        top: 0;
-        width: 100%;
-        z-index: 1000; /* Ensures the navbar stays on top of other elements */
-        transition: top 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #162A2E;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
+
+/* Adjust navbar for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .navbar a {
+        margin: 10px 0; /* Add margin for spacing between links */
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar a {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+}
+
 .navbar.hidden {
     top: -100px; /* Adjust this value based on the height of your navbar */
 }
@@ -115,6 +141,14 @@ span{
     margin-top: 50px;
     text-align: center;
 }
+#about h1,#language h1{
+ font-size: 5rem;
+}
+#contact h1,#projects h1{
+font-size: 5rem;
+padding-left: 2.5%;
+}
+
 
 .backend-img img, .frontend-img img {
     width: 80px;
@@ -146,12 +180,12 @@ span{
 .fa-facebook {
     font-size: 50px;
     padding-right: 20px;
-    color: rgb(87, 87, 241);
+    color: rgb(135, 206, 235);
 }
 
 .fa-github {
     font-size: 50px;
-    color: black;
+    color: rgb(135, 206, 235);
 }
 .fa-linkedin:hover,.fa-facebook:hover,.fa-github:hover{
  transform: scale(1.50);
@@ -256,4 +290,61 @@ span{
 }
 #projects h3, #projects p{
  color:rgba(255, 255, 255, 0.767)
+}
+#contact p{
+font-size: 1.5rem;
+margin-left: 3%;
+margin-bottom: 2%;
+}
+.icons{
+    margin-left: 3%;
+
+}
+.copyright{
+    display: block;
+    text-align: center;
+    padding: 25x;
+    font-weight: 300;
+    width: 100%;
+    margin-top: 25px;
+    background-color:#265c88;
+}
+#contact .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-info {
+    width: 45%;
+}
+
+.contact-form {
+    width: 45%;
+    padding-top:6%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
 }
