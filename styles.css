@@ -191,6 +191,10 @@ padding-left: 2.5%;
  transform: scale(1.50);
    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
+.fa-arrow-up-right-from-square:hover{
+transform: scale(1.50);
+box-shadow: 0 6px 8px rgba(224, 7, 7, 0.788);
+}
 .typing-text{
     font-size: 34px;
     font-weight: 600;
