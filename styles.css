@@ -315,7 +315,28 @@ margin-bottom: 2%;
     align-items: flex-start;
     gap: 20px;
 }
+.contact-container{
+ margin-right:100px;
+}
+@media screen and (max-width: 768px) {
+    #contact .contact-container {
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center;
+        align-items: center;
+        margin-right: 0; /* Remove right margin for small screens */
+        padding: 0 20px; /* Add some padding to the sides */
+    }
+}
 
+@media screen and (max-width: 480px) {
+    #contact .contact-container {
+        padding: 0 10px; /* Further reduce padding for very small screens */
+    }
+
+    .contact-form, .contact-info {
+        width: 100%; /* Make form and info take full width */
+    }
+}
 .contact-info {
     width: 45%;
 }
@@ -339,7 +360,7 @@ input, textarea {
 button {
     padding: 10px 20px;
     border: none;
-    background-color: #333;
+    background-color: #3741ca;
     color: #fff;
     cursor: pointer;
     border-radius: 5px;
